@@ -4,7 +4,7 @@ export const login= async(data)=>{
     }
     else{
         try{
-            const get = await fetch('http://localhost:8000/login',{
+            const get = await fetch('https://assignmentservermern.herokuapp.com/login',{
             method :"POST",
             headers:{"Content-Type" :"application/json"},
             body:JSON.stringify(data)
@@ -26,7 +26,7 @@ export const register= async(data)=>{
     }
     else{
         try{
-            const get = await fetch('http://localhost:8000/register',{
+            const get = await fetch('https://assignmentservermern.herokuapp.com/register',{
             method :"POST",
             headers:{"Content-Type" :"application/json"},
             body:JSON.stringify(data)
