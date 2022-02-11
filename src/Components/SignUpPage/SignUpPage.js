@@ -1,4 +1,4 @@
-import {FaBacterium,FaEnvelope,FaFacebook,FaGoogle,FaLock, FaUser } from 'react-icons/fa';
+import {FaBacterium,FaEnvelope,FaLock, FaUser } from 'react-icons/fa';
 import './SignUpPage.css'
 import {  useState } from "react";
 import { login ,register} from '../../Services/users';
@@ -33,7 +33,7 @@ const SignUpPage =()=>{
     const userSignin = async()=>{
         setIsLoading(true)
         const res = await register(signInDetails)
-        alert(res)
+        alert(res.message)
         setPage(res.page)
         setIsLoading(false)
     }
