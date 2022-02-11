@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#007FFF;
+    --primary-color-hover:#0073cf;
+    --primary-box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.navlink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.primary-button{
+    height: 2rem;
+    width: 100%;
+    padding: 0.3rem;
+    background-color: var(--primary-color);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+    background-color: var(--primary-color-hover);
+    
+}
+
+.await-button{
+    cursor: default;
+    background-color: var(--primary-color-hover);
+}

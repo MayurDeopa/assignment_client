@@ -1,0 +1,59 @@
+.spinner-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+
+
+.button-spinner{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:solid 2px white;
+    border-top-color:transparent;
+    border-right-color: transparent;
+    animation: spinner;
+    animation-timing-function: linear;
+    animation-duration:0.8s;
+    animation-iteration-count: infinite;
+}
+
+.secondary-spinner-wrapper{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter:  saturate(180%) blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.spinner,.secondary-spinner{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:solid 3px white;
+    border-top-color:transparent;
+    animation: spinner;
+    animation-timing-function: linear;
+    animation-duration:0.6s;
+    animation-iteration-count: infinite;
+}
+
+.secondary-spinner{
+    width: 1.8rem;
+    height: 1.8rem;
+    border:solid  0.2rem lightgray;
+    border-top-color:var(--primary-color);
+}
+
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+}
